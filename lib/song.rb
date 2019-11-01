@@ -9,10 +9,10 @@ class Song
   end
 
   def save
-    self.class.all << self
+    @all << self
   end
 
-  def self.create
+  def self.create(s)
     s = self.new
     s.save
     return s
